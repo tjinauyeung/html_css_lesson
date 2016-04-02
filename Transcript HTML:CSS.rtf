@@ -1,0 +1,252 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fnil\fcharset0 AvenirNext-Regular;}
+{\colortbl;\red255\green255\blue255;}
+\deftab560
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab560\sl336\slmult1\pardirnatural
+
+\f0\fs34 \cf0 Transcript HTML/CSS lesson\
+\
+Short introduction into html.\
+\
+Hi guys, so this will be my first lesson that I will teach to you. Hopefully I don't make a complete fool out of myself. If there are any questions or something is not clear please feel free to let me know. \
+\
+
+\i #next slide
+\i0 \
+\
+
+\b intro about me
+\b0 \
+Short intro about me\
+I'm Tjin, I'm a recent Codaisseur graduate. Actually not so long ago I had the pleasure of sitting in the seat that you are sitting. So the you could say this is a case of the grasshopper became the sensei kind of thing. \
+\
+I just received a job offer of Usabilla last week and still waiting for a few other companies plus I have a few interviews next week as well. It's going well.\
+\
+Currently I'm in talks with a few web agencies like momkai and digital natives, will hear from them this week and hopefully start working there in the near future. After graduation Wouter asked me to give the introductory lesson to you guys and get you guys excited to learn web development. \
+\
+
+\i #next slide\
+
+\i0 \
+
+\b timeschedule
+\b0 \
+So first off, the time schedule for today.\
+We'll start off with some html basics untill lunch. After the lunch we will talk about styling and we will end with demo's! \
+\
+
+\i #next slide\
+\
+
+\i0\b\fs44 1. HTML \
+
+\i\b0\fs34 \
+
+\i0\b what is html?
+\i\b0 \
+
+\i0 Okay, what is HTML? HTML is a a hypertext markup language invented by some scientist at CERN. If you ever read the Da Vinci code you'll know that they're this massive scientific research lab in switzerland. Cauldrin Collider and everything. Turns out they're also responsible for the interwebs.\
+\
+The html document is a flat document which is read by the browser and translated into this website that you see.\
+\
+
+\b sidenote lesson\
+
+\b0 This lesson I will explain by building a website \
+\
+
+\i #next slide\
+\
+
+\i0\b tags
+\i\b0 \
+
+\i0 The basic element within html are called html tags. They look like this (show tags). Almost all tags need a opening tag and a closing tag. Between the opening and the closing tag is room to put the content. \
+\
+Enter example.\
+How does it work in practise? I'll show you! \
+
+\i make a tags.html, tell about the html extension and show off a few different tags like h1, h2, p and ul.\
+\
+h1 Hi! My name is Tjin.\
+h2 I'm your teacher.\
+p Three things I like that start with a d: \
+ul Dimsum, design, development\
+\
+Just a simple question, what will happen if you forget to close a tag and continue with different tags? \
+\
+answer: it will render the underlying tags applying the values of the tag that's still open.
+\i0 \
+\
+
+\i #next slide\
+
+\i0 \
+
+\b attributes
+\b0 \
+Tags can have different kinds of attributes. These attributes differ from tag to tag. For example the img tag has a src attribute which can be used to give the 
+\i image
+\i0  tag a 
+\i source 
+\i0 where it can get the data from.\
+\
+
+\i #next slide\
+\
+
+\i0 There are a lot of tags, which you can find at at the w3cschools for documentation. Another site I found which has a somewhat cleaner more user friendly interface is called gethtml.at. I recommend you guys to take a look there and use it for the website that you are going to build.\
+\
+
+\i show in tags.html how attributes work. add an image tag and check out gethtml.at for a different attribute. 
+\i0 \
+\
+
+\i #next slide\
+\
+
+\i0\b demo what we have learned
+\b0 \
+So let's make a basic website\
+enter demo for
+\fs44  
+\fs34 basic website\
+\
+
+\i Check out tags.html and add some structure to it. Typically an html document is structured like this. Explain head - for meta info, information that mostly will not be rendered within the browser window. body - information that will be rendered.
+\i0 \
+\
+
+\i structure the tags.html page using the structure provided.
+\i0 \
+\
+
+\i #next slide\
+\
+
+\i0\b start building
+\b0 \
+I'll put some links in on slack and you guys can start building the basic framework for your website. \
+\
+Start you off with some ideas \
+\
+Personal website, a bit about yourself. It has to contain an ordered and an unordered list. \
+\
+
+\i Show off example I made last week.
+\i0 \
+\
+
+\b\fs44 2. CASCADING STYLES\
+\
+
+\fs34 So let's get to the good part: styling\
+
+\b0 Styling happens with a thing called css, it uses a different syntax but it's not very difficult to learn. This is where the magic happens.\
+\
+
+\b how?\
+
+\b0 How styling works when the code is placed between style tags the browser will read it as css. \
+\
+
+\b targeting elements\
+
+\b0 One of the fundamental aspects of css is how you target certain html elements. \
+\
+It goes like this: \
+\
+html  \{ \
+	
+\i background: red;\
+	color: blue;\
+
+\i0 \}\
+\
+so you have an element before curly braces that you target and in between the curly braces you put the styles that you want the element to attain. There are a lot of different styling options that you can apply to the elements.\
+\
+We will talk about a few important concepts in this.\
+\
+1. color technique\
+2. display options\
+3. box model\
+\
+demo?\
+\
+
+\i #next slide\
+\
+
+\i0\b box model\
+
+\b0 what important is to know about how an attribute is applied is to look at the box model. So typically it looks like this. 
+\i enter a drawing with explanation of margins, paddings, border and content.\
+\
+
+\i0 How do you know how a webpage is built up? \
+\
+Enter a trick * \{ border: 1px solid red \}\
+\
+Demo padding, margin and border.\
+\
+
+\i #next slide
+\i0 \
+\
+
+\b display \
+
+\b0 There are a few options with display that you'll need to grasp before you understand what is happening in the browser, because it can be a bit tricky. \
+\
+first of all the elements can be block elements \
+two default values display inline and display block\
+display block will try to take over the entire line of the page and display inline will stay on one line. Remember word when you put in a image and you have the option of wrapping the text around or stay on the same line? It kind of works like that.\
+\
+to show the difference between the two display styling I'll give a short demo.\
+\
+
+\b display flex\
+
+\b0 Before this technology was invented it was very hard to for example just center an element.\
+\
+Demo flexboxin5.com\
+\
+
+\i #next slide
+\i0 \
+\
+
+\b color \
+
+\b0 this one will be brief. There are a few different types of technique to enter color. You have colors that you can use just by calling color names like red, blue, yellow and even tiel. But a more exact way is to use a method like hexagon value. \
+\
+Demo colorzilla\
+\
+Demo how to apply it on the page.
+\b \
+
+\b0 \
+
+\i #next slide\
+\
+
+\i0\b extract the style file into a css file for better organisation\
+
+\b0 So far we have been putting our styling rules inside the same file as the html file. If you have a bit bigger webpage it will get messy quite fast. So the best way is to \
+\
+
+\b Conclusion\
+
+\b0 So lots of new concepts in CSS, this is still just the tip of the iceberg. But the best way to learn is to apply the techniques yourself. So please continue with your project and style the motherfocker. \
+\
+I will be here if you have any question feel free to ask me and I will try to help you out. But, before you go and ask, please put some effort in it to solve it yourself. Either with google or just trial and error. You will learn a lot more from this then if I give you an answer on every problem you encounter.\
+\
+\
+\
+\
+
+\i \
+
+\i0 \
+\
+}
